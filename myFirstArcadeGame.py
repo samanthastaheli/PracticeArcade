@@ -108,13 +108,13 @@ class MyFirstGame(arcade.Window):
         # arcade.schedule(self.add_friends, 1)
 
         # game physics
-        # self.physics_engine = arcade.PhysicsEngineSimple(
-        #     self.turtle_sprite, self.scene.get_sprite_list("Walls")
-        # )
+        self.physics_engine = arcade.PhysicsEngineSimple(
+            self.turtle_sprite, self.scene.get_sprite_list("Walls")
+        )
 
-        self.physics_engine = arcade.PhysicsEnginePlatformer(
-			self.turtle_sprite, self.scene.get_sprite_list("Walls"), 0.5
-		)
+        # self.physics_engine = arcade.PhysicsEnginePlatformer(
+		# 	self.turtle_sprite, self.scene.get_sprite_list("Walls"), 0.5
+		# )
 
     def setup(self):
         # Initialize Scene
@@ -152,28 +152,28 @@ class MyFirstGame(arcade.Window):
         # add characters
         # arcade.schedule(self.add_enemies, 2)
         # arcade.schedule(self.add_friends, 3)
-        self.turtle_sprite.center_y += self.vel_y * delta_time
+        # self.turtle_sprite.center_y += self.vel_y * delta_time
 
         self.physics_engine.update() #simple pyhcics class
 
     def on_key_press(self, key, modifiers):
         """Called whenever a key is pressed"""
         if key == UP_KEY:
-            # self.turtle_sprite.change_y = -PLAYER_MOVEMENT_SPEED
-            self.vel_y = PLAYER_MOVEMENT_SPEED
+            self.turtle_sprite.change_y = -PLAYER_MOVEMENT_SPEED
+            # self.vel_y = PLAYER_MOVEMENT_SPEED
         elif key == DOWN_KEY:
-            # self.turtle_sprite.change_y = -PLAYER_MOVEMENT_SPEED
-            self.vel_y = -PLAYER_MOVEMENT_SPEED
+            self.turtle_sprite.change_y = -PLAYER_MOVEMENT_SPEED
+            # self.vel_y = -PLAYER_MOVEMENT_SPEED
 
     def on_key_release(self, key, modifiers):
         """Called when the user releases a key"""
 
         if key == UP_KEY:
-            # self.turtle_sprite.change_y = PLAYER_MOVEMENT_SPEED
-            self.vel_y = PLAYER_MOVEMENT_SPEED
+            self.turtle_sprite.change_y = PLAYER_MOVEMENT_SPEED
+            # self.vel_y = PLAYER_MOVEMENT_SPEED
         elif key == DOWN_KEY:
-            # self.turtle_sprite.change_y = -PLAYER_MOVEMENT_SPEED
-            self.vel_y = -PLAYER_MOVEMENT_SPEED
+            self.turtle_sprite.change_y = -PLAYER_MOVEMENT_SPEED
+            # self.vel_y = -PLAYER_MOVEMENT_SPEED
 
     def get_players(self):
         self.player_list = arcade.SpriteList() # add player using built in SpriteList class
