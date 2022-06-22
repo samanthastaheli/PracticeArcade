@@ -3,7 +3,7 @@ Learn to use Python Arcade library.
 
 ## Overview
 
-{Provide a description the game that you wrote}
+A simple one player game where the player can move up and down.
 
 ### How to Play
 The player is a turtle and can move up and down. There are crabs and fish that move towards the turtle and of the screen. If the turtle collides with a crab the score in the top right corner will decrese by 1. If the turtle collides with the fish the score will increase by one.
