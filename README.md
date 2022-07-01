@@ -3,12 +3,12 @@ Learn to use Python Arcade library.
 
 ## Overview
 
-{Provide a description the game that you wrote}
+A simple one player game where the player can move up and down.
 
 ### How to Play
-{Describe how to play your game}
+The player is a turtle and can move up and down. There are crabs and fish that move towards the turtle and of the screen. If the turtle collides with a crab the score in the top right corner will decrese by 1. If the turtle collides with the fish the score will increase by one.
 
-{Describe your purpose for writing this software.}
+The purpose for creating this game was to learn how to use Python Arcade. This is the first game I have made using Python Arcade so the game is very simple. 
 
 The following link is an overview of the code and a demonstration of the game being played.
 
@@ -28,5 +28,7 @@ This game is written in Python using the Python Arcade library. The IDE used was
 
 ## Future Work
 
-* Seperate code into different files and import into one main file.
+* Get crab and fish to move
+* Score logic
+* Seperate code into different files and import into one main file
 * Add sound effects
