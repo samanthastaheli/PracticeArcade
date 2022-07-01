@@ -1,7 +1,6 @@
 """
 TODOs:
-- text display in window
-- number changes when turtle collides with enemie/friend
+- number changes when turtle collides with enemy/friend
 - when turtle collides with crab, point goes down
 - when turtle collides with nemo, point goes up
 - when turtle collides with crab/nemo, that character disapears
@@ -9,7 +8,6 @@ TODOs:
 - display moves
     - crab/nemo/seaweed y value stays same but x value constant change (current)
     - more crab/nemo/seaweed appear
-        - randomly or set?
         - don't want objects to close to each other or overlap
 """
 

@@ -12,7 +12,7 @@ Learn to use Python Arcade library.
 
 The following link is an overview of the code and a demonstration of the game being played.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/56qlUGNNyTY)
 
 ## Development Environment
 
